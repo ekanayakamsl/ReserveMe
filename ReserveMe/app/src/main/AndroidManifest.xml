@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.smartlogic.saranga.reserveme" >
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".CommonViews.LoadingActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CustomerViews.CustomerSignUpActivity" />
+        <activity android:name=".HotelViews.HotelSignUpActivity" />
+        <activity android:name=".CommonViews.LogInActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCpnqf_BrPjeqe67zLWgBID_SHN2xXKqh4" />
+
+        <activity
+            android:name=".HotelViews.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".CustomerViews.HotelMapActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".CustomerViews.CustomerMainActivity" />
+        <activity android:name=".HotelViews.HotelMainActivity" />
+        <activity android:name=".ReservetionActivity" />
+        <activity android:name=".CustomerViews.ViewHotelActivity" >
+        </activity>
+        <activity android:name=".CustomerViews.ViewHotelActivity" >
+        </activity>
+        <activity
+            android:name=".HotelViews.ViewRoomActivity"
+            android:label="@string/title_activity_view_room"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+    </application>
+
+</manifest>

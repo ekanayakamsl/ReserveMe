@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutTop"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="7"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/nameTextView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="Rathmahara"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold|italic" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/phoneTextView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="0714269395"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/emailTextView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="ekanayaka.msl@gmail.com"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"></LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"></LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/reserveButton"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/layout_bg"
+                            android:onClick="onReserve"
+                            android:text="Reserve"
+                            android:textColor="@color/colorAccent"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/dateTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:onClick="onDate"
+                            android:text="date"
+                            android:textColor="@color/colorPrimary" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="5"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:background="@drawable/layout_bg">
+
+                <ListView
+                    android:id="@+id/bookingListView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"></ListView>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="10"
+        android:gravity="center"
+        android:padding="5dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_bg"
+            android:gravity="center"
+            android:onClick="onSignOut"
+            android:text="Sing Out"
+            android:textColor="@color/colorAccent" />
+    </LinearLayout>
+
+</LinearLayout>
